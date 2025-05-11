@@ -1,0 +1,70 @@
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 10px var(--shadow-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background-color var(--transition-speed);
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    background-color: var(--input-focus);
+    color: var(--primary-color);
+}
+
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.logout-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-left: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: var(--hover-color);
+}
+
+/* .theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 12px;
+    cursor: pointer;
+} */
