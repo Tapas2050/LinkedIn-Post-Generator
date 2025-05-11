@@ -1,0 +1,74 @@
+.register-container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--input-bg);
+    outline: none;
+}
+
+input:focus {
+    background-color: var(--input-focus);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+.success {
+    color: green;
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+    font-weight: 500;
+}
+
+.switch-option {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.switch-option a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.switch-option a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
