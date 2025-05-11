@@ -1,0 +1,35 @@
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    transform-style: preserve-3d;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) rotateX(2deg);
+    box-shadow: 0 15px 30px var(--shadow-color);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(-10px) translateZ(20px) rotateX(2deg) rotateY(1deg);
+    }
+    100% {
+      transform: translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg);
+    }
+  }
+  
+  .card {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      padding: 20px;
+    }
+  }
